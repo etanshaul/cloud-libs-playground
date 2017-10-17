@@ -8,6 +8,14 @@
     <title>Cloud Libs</title>
 </head>
 <body>
+    <div>
+        <h3>GCS</h3>
+        <ul>
+            <c:forEach items="${buckets}" var="bucket">
+                <li>${bucket}</li>
+            </c:forEach>
+        </ul>
+    </div>
     ${message}
 </body>
 </html>
