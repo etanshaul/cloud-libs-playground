@@ -2,8 +2,9 @@ package com.eshaul.cloud.libs;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import java.util.Map;
 
 /**
  * Created by eshaul on 10/16/17.
@@ -12,9 +13,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @EnableAutoConfiguration
 public class LibController {
 
-    @RequestMapping("/")
-    @ResponseBody
-    String home() {
-        return "hello";
+    @GetMapping("/")
+    public String index(Map<String, Object> model) {
+        model.put("message", "hw!!!");
+        return "index";
     }
 }
