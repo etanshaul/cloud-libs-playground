@@ -16,6 +16,14 @@
             </c:forEach>
         </ul>
     </div>
-    ${message}
+
+    <div>
+        <h3>Datastore</h3>
+        <ul>
+            <c:forEach items="${datastoreProps}" var="entry">
+                <li>${entry.key} : ${entry.value}</li>
+            </c:forEach>
+        </ul>
+    </div>
 </body>
 </html>
