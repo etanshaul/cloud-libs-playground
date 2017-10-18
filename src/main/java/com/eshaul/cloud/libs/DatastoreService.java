@@ -26,4 +26,12 @@ public class DatastoreService {
 
         return properties;
     }
+
+    void seedData() {
+        Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
+        KeyFactory keyFactory = datastore.newKeyFactory().setKind("LocalEmulator");
+        Key key = keyFactory.newKey("localKey") ;
+        Entity entity = Entity.newBuilder(key).set("test", "testVal").build();
+        datastore.put(entity);
+    }
 }

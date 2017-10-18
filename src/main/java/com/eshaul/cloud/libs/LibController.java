@@ -36,4 +36,10 @@ public class LibController {
         model.put("translationOutput", translateService.translate(TRANSLATE_INPUT));
         return "index";
     }
+
+    @GetMapping("/seed")
+    public String seed() {
+        datastoreService.seedData();
+        return "index";
+    }
 }
