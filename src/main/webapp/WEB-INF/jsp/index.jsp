@@ -25,5 +25,12 @@
             </c:forEach>
         </ul>
     </div>
+
+    <div>
+        <h3>Translate</h3>
+        <ul>
+            <li>Input: ${translationInput}, Spanish: ${translationOutput}</li>
+        </ul>
+    </div>
 </body>
 </html>
