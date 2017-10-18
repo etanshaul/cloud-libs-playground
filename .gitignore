@@ -9,11 +9,17 @@ target/
 .settings
 .springBeans
 
+**/.DS_Store
+
 ### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+.idea/workspace.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/gradle.xml
+.idea/libraries/
+.idea/kotlinc.xml
+.idea/shelf/
+**/*.iml
 
 ### NetBeans ###
 nbproject/private/
